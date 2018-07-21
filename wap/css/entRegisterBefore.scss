@@ -1,0 +1,255 @@
+@function px2rem($px) {
+    $rem: 75px;
+    @return ($px / $rem) + rem;
+}
+body {
+    background-color: #FFF;
+}
+.header {
+    font-family:PingFangSC-Medium;
+    color:rgba(255,255,255,1);
+    width: 100%;
+    height: px2rem(128px);
+    line-height:px2rem(52px);
+    background: #333334;
+    padding-top: px2rem(58px);
+    text-align: center;
+    position: relative;
+    .header-title {
+        font-size:px2rem(37px);
+    }
+    .header-btn {
+        font-family: PingFangSC-Light;
+        font-size:px2rem(28px);
+        position: absolute;
+        left: px2rem(15px);
+        .icon {
+            display: inline-block;
+            width: px2rem(22px);
+            height: px2rem(22px);
+            border-left: px2rem(3px) solid #FFF;
+            border-bottom: px2rem(3px) solid #FFF;
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+            position: relative;
+            top: 0;
+            left: px2rem(12px);
+        }
+    }
+}
+
+.banner {
+    width: 100%;
+    height: px2rem(280px);
+    line-height: 0;
+    background:linear-gradient(-90deg,rgba(108,139,254,1),rgba(106,158,255,1));
+    overflow: hidden;
+    .img-close {
+        width: px2rem(44px);
+        height: px2rem(44px);
+        margin-top: px2rem(32px);
+        margin-left: px2rem(32px);
+        img {
+            width: px2rem(44px);
+            height: px2rem(44px);
+        }
+    }
+    .img-logo {
+        text-align: center;
+        img {
+            width: px2rem(346px);
+            height: px2rem(64px);
+        }
+    }
+    .banner-btn {
+        text-align: center;
+        margin-top: px2rem(32px);
+        font-size: 0;
+        button {
+            font-size:px2rem(30px);
+            font-family:PingFangSC-Regular;
+            color:rgba(112,112,118,1);
+            width:px2rem(138px);
+            height:px2rem(64px);
+            background:rgba(255,255,255,1);
+            border:px2rem(1px) solid rgba(229,229,229,1);
+        }
+        .btn-click {
+            font-family:PingFangSC-Regular;
+            color:#6C8BFE;   
+        }
+        #btn-left {
+            border-radius:px2rem(4px) 0 0 px2rem(4px);
+        }
+        #btn-right {
+            border-radius:0 px2rem(4px) px2rem(4px) 0;
+        }
+    }
+}
+
+.main {
+    width: 100%;
+    background:#FFF;
+    border-radius:px2rem(8px) px2rem(8px) 0 0;
+    padding: px2rem(35px) px2rem(48px) 0 px2rem(48px);
+    position: relative;
+    top: px2rem(-4px);
+    .main-title {
+        font-size:0;
+        font-family:PingFangSC-Regular;
+        color:rgba(151,151,153,1);
+        text-align: center;
+        .title-left {
+            font-size:px2rem(30px);
+            display: inline-block;
+            margin-right: px2rem(84px);
+        }
+        .title-right {
+            font-size:px2rem(30px);
+            display: inline-block;
+        }
+        .title-bottom-border {
+            width:px2rem(96px);
+            height:px2rem(6px);
+            margin: px2rem(15px) auto 0;
+            background:rgba(108,139,254,1);
+            border-radius:px2rem(3px);  
+        }
+        .title-click {
+            font-family:PingFangSC-Semibold;
+            color:rgba(108,139,254,1);
+        }
+    }
+    input {
+        float: left;
+        font-size:px2rem(30px);
+        font-family:PingFangSC-Regular;
+        color:rgba(44,48,54,1);
+        width: px2rem(654px);
+        line-height: px2rem(80px);
+        height: px2rem(80px);
+        border-bottom: px2rem(1px) solid rgba(229,229,229,1);
+        padding-left: px2rem(214px);
+    }
+    /* 去除姓名框内最右侧大黑叉 */
+    input::-ms-clear{
+        display: none;
+    }
+    /* 去除密码框内最右侧大眼睛 */
+    input::-ms-reveal{
+        display: none;
+    }
+    input::placeholder {
+        font-size:px2rem(30px);
+        font-family:PingFangSC-Regular;
+        color:rgba(198,198,200,1);
+    }
+    .input-entname {
+        margin-top: px2rem(40px);
+        overflow: hidden;
+        position: relative;
+    }
+    .input-people,
+    .input-tel,
+    .input-phone,
+    .input-name,
+    .input-email,
+    .input-psw,
+    .input-psw2 {
+        margin-top: px2rem(20px);
+        overflow: hidden;
+        position: relative;
+    }
+    .input-entname:before,
+    .input-people:before,
+    .input-tel:before,
+    .input-phone:before,
+    .input-name:before,
+    .input-email:before,
+    .input-psw:before,
+    .input-psw2:before, {
+        font-size:px2rem(30px);
+        font-family:PingFangSC-Regular;
+        color:rgba(112,112,118,1);
+        position: absolute;
+        top: px2rem(25px);
+        left: 0;
+    }
+    .input-entname:before {
+        content: '公司名称';
+    }
+    .input-people:before {
+        content: '联系人';
+    }
+    .input-tel:before {
+        content: '办公号码';
+    }
+    .input-phone:before {
+        content: '手机号码';
+    }
+    .input-name:before {
+        content: '用户名';
+    }
+    .input-email:before {
+        content: '电子邮箱';
+    }
+    .input-psw:before {
+        content: '设置密码';
+    }
+    .input-psw2:before {
+        content: '再次输入密码';
+    }
+    .main-btn {
+        overflow: hidden;
+        font-size: 0;
+        margin-top: px2rem(72px);
+        text-align: center;
+        button {
+            width:px2rem(460px);
+            height:px2rem(88px);
+            background:rgba(108,139,254,1);
+            box-shadow:0px px2rem(4px) px2rem(12px) 0px rgba(108,139,254,0.2);
+            border-radius:px2rem(8px);
+            font-size:px2rem(36px);
+            font-family:PingFangSC-Semibold;
+            color:rgba(255,255,255,1);
+        }
+    }
+    .text-wrapper {
+        font-size: 0;
+        text-align: center;
+        margin: px2rem(44px) 0 px2rem(93px);
+            .cbLabel {
+                display: inline-block;
+                width: px2rem(24px);
+                height: px2rem(24px);
+                background: url(../img/beforeClick.png) no-repeat center;
+                background-size: px2rem(24px) px2rem(24px); 
+                vertical-align: bottom;
+                margin-right: px2rem(8px);
+            }
+            .cbLabel2 {
+                display: inline-block;
+                width: px2rem(24px);
+                height: px2rem(24px);
+                background: url(../img/afterClick.png) no-repeat center;
+                background-size: px2rem(24px) px2rem(24px); 
+                vertical-align: bottom;
+                margin-right: px2rem(8px);
+            }
+        .text {
+            display: inline;
+            font-size:px2rem(24px);
+            font-family:PingFangSC-Regular;
+            color:rgba(112,112,118,1);
+        }
+        .xieyi {
+            margin-left: px2rem(4px);
+            color: #5668A6;
+        }
+    }
+}
+

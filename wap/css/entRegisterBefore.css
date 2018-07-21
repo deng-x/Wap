@@ -1,0 +1,211 @@
+@charset "UTF-8";
+body {
+  background-color: #FFF; }
+
+.header {
+  font-family: PingFangSC-Medium;
+  color: white;
+  width: 100%;
+  height: 1.7066666667rem;
+  line-height: 0.6933333333rem;
+  background: #333334;
+  padding-top: 0.7733333333rem;
+  text-align: center;
+  position: relative; }
+  .header .header-title {
+    font-size: 0.4933333333rem; }
+  .header .header-btn {
+    font-family: PingFangSC-Light;
+    font-size: 0.3733333333rem;
+    position: absolute;
+    left: 0.2rem; }
+    .header .header-btn .icon {
+      display: inline-block;
+      width: 0.2933333333rem;
+      height: 0.2933333333rem;
+      border-left: 0.04rem solid #FFF;
+      border-bottom: 0.04rem solid #FFF;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+      position: relative;
+      top: 0;
+      left: 0.16rem; }
+
+.banner {
+  width: 100%;
+  height: 3.7333333333rem;
+  line-height: 0;
+  background: linear-gradient(-90deg, #6c8bfe, #6a9eff);
+  overflow: hidden; }
+  .banner .img-close {
+    width: 0.5866666667rem;
+    height: 0.5866666667rem;
+    margin-top: 0.4266666667rem;
+    margin-left: 0.4266666667rem; }
+    .banner .img-close img {
+      width: 0.5866666667rem;
+      height: 0.5866666667rem; }
+  .banner .img-logo {
+    text-align: center; }
+    .banner .img-logo img {
+      width: 4.6133333333rem;
+      height: 0.8533333333rem; }
+  .banner .banner-btn {
+    text-align: center;
+    margin-top: 0.4266666667rem;
+    font-size: 0; }
+    .banner .banner-btn button {
+      font-size: 0.4rem;
+      font-family: PingFangSC-Regular;
+      color: #707076;
+      width: 1.84rem;
+      height: 0.8533333333rem;
+      background: white;
+      border: 0.0133333333rem solid #e5e5e5; }
+    .banner .banner-btn .btn-click {
+      font-family: PingFangSC-Regular;
+      color: #6C8BFE; }
+    .banner .banner-btn #btn-left {
+      border-radius: 0.0533333333rem 0 0 0.0533333333rem; }
+    .banner .banner-btn #btn-right {
+      border-radius: 0 0.0533333333rem 0.0533333333rem 0; }
+
+.main {
+  width: 100%;
+  background: #FFF;
+  border-radius: 0.1066666667rem 0.1066666667rem 0 0;
+  padding: 0.4666666667rem 0.64rem 0 0.64rem;
+  position: relative;
+  top: -0.0533333333rem;
+  /* 去除姓名框内最右侧大黑叉 */
+  /* 去除密码框内最右侧大眼睛 */ }
+  .main .main-title {
+    font-size: 0;
+    font-family: PingFangSC-Regular;
+    color: #979799;
+    text-align: center; }
+    .main .main-title .title-left {
+      font-size: 0.4rem;
+      display: inline-block;
+      margin-right: 1.12rem; }
+    .main .main-title .title-right {
+      font-size: 0.4rem;
+      display: inline-block; }
+    .main .main-title .title-bottom-border {
+      width: 1.28rem;
+      height: 0.08rem;
+      margin: 0.2rem auto 0;
+      background: #6c8bfe;
+      border-radius: 0.04rem; }
+    .main .main-title .title-click {
+      font-family: PingFangSC-Semibold;
+      color: #6c8bfe; }
+  .main input {
+    float: left;
+    font-size: 0.4rem;
+    font-family: PingFangSC-Regular;
+    color: #2c3036;
+    width: 8.72rem;
+    line-height: 1.0666666667rem;
+    height: 1.0666666667rem;
+    border-bottom: 0.0133333333rem solid #e5e5e5;
+    padding-left: 2.8533333333rem; }
+  .main input::-ms-clear {
+    display: none; }
+  .main input::-ms-reveal {
+    display: none; }
+  .main input::placeholder {
+    font-size: 0.4rem;
+    font-family: PingFangSC-Regular;
+    color: #c6c6c8; }
+  .main .input-entname {
+    margin-top: 0.5333333333rem;
+    overflow: hidden;
+    position: relative; }
+  .main .input-people,
+  .main .input-tel,
+  .main .input-phone,
+  .main .input-name,
+  .main .input-email,
+  .main .input-psw,
+  .main .input-psw2 {
+    margin-top: 0.2666666667rem;
+    overflow: hidden;
+    position: relative; }
+  .main .input-entname:before,
+  .main .input-people:before,
+  .main .input-tel:before,
+  .main .input-phone:before,
+  .main .input-name:before,
+  .main .input-email:before,
+  .main .input-psw:before,
+  .main .input-psw2:before {
+    font-size: 0.4rem;
+    font-family: PingFangSC-Regular;
+    color: #707076;
+    position: absolute;
+    top: 0.3333333333rem;
+    left: 0; }
+  .main .input-entname:before {
+    content: '公司名称'; }
+  .main .input-people:before {
+    content: '联系人'; }
+  .main .input-tel:before {
+    content: '办公号码'; }
+  .main .input-phone:before {
+    content: '手机号码'; }
+  .main .input-name:before {
+    content: '用户名'; }
+  .main .input-email:before {
+    content: '电子邮箱'; }
+  .main .input-psw:before {
+    content: '设置密码'; }
+  .main .input-psw2:before {
+    content: '再次输入密码'; }
+  .main .main-btn {
+    overflow: hidden;
+    font-size: 0;
+    margin-top: 0.96rem;
+    text-align: center; }
+    .main .main-btn button {
+      width: 6.1333333333rem;
+      height: 1.1733333333rem;
+      background: #6c8bfe;
+      box-shadow: 0px 0.0533333333rem 0.16rem 0px rgba(108, 139, 254, 0.2);
+      border-radius: 0.1066666667rem;
+      font-size: 0.48rem;
+      font-family: PingFangSC-Semibold;
+      color: white; }
+  .main .text-wrapper {
+    font-size: 0;
+    text-align: center;
+    margin: 0.5866666667rem 0 1.24rem; }
+    .main .text-wrapper .cbLabel {
+      display: inline-block;
+      width: 0.32rem;
+      height: 0.32rem;
+      background: url(../img/beforeClick.png) no-repeat center;
+      background-size: 0.32rem 0.32rem;
+      vertical-align: bottom;
+      margin-right: 0.1066666667rem; }
+    .main .text-wrapper .cbLabel2 {
+      display: inline-block;
+      width: 0.32rem;
+      height: 0.32rem;
+      background: url(../img/afterClick.png) no-repeat center;
+      background-size: 0.32rem 0.32rem;
+      vertical-align: bottom;
+      margin-right: 0.1066666667rem; }
+    .main .text-wrapper .text {
+      display: inline;
+      font-size: 0.32rem;
+      font-family: PingFangSC-Regular;
+      color: #707076; }
+    .main .text-wrapper .xieyi {
+      margin-left: 0.0533333333rem;
+      color: #5668A6; }
+
+/*# sourceMappingURL=entRegisterBefore.css.map */
